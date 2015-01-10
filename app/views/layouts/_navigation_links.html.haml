@@ -1,0 +1,10 @@
+- if user_signed_in?
+  %li= link_to 'Edit account', edit_user_registration_path
+  %li= link_to 'Sign out', destroy_user_session_path, :method=>'delete'
+- else
+  %li= link_to 'Homes', ''
+  %li= link_to 'Gallery', ''
+  %li= link_to 'Floor Plans', ''
+  %li= link_to 'Neighborhoods', ''
+  %li= link_to 'About', page_path('about')
+  %li= link_to 'Contact', page_path('contact')
