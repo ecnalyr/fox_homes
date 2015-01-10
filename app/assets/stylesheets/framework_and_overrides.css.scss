@@ -4,11 +4,13 @@
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
-  line-height: 45px; }
-.top-bar .name a {
+  line-height: 45px;
   font-weight: normal;
   color: white;
-  padding: 0 15px; }
+  padding: 0 15px;
+  img {
+    max-height: 100%;
+    } }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
@@ -40,7 +42,6 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #eee;
   }
 section {
   @extend .row;
@@ -90,3 +91,4 @@ section {
   @extend .radius;
   @extend .tiny;
 }
+
